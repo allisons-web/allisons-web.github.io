@@ -1,0 +1,188 @@
+#main-sheet {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+#horizontal-line {
+    position: relative;
+    top: 150px;
+    height: 1px;
+    width: 500px;
+    background: black;
+}
+
+#vertical-line-1 {
+    position: relative;
+    top: 0px;
+    left: 125px;
+    height: 300px;
+    width: 1px;
+    background: black;
+}
+
+#vertical-line-2 {
+    position: relative;
+    top: -300px;
+    left: 250px;
+    height: 300px;
+    width: 1px;
+    background: black;
+}
+
+#vertical-line-3 {
+    position: relative;
+    top: -600px;
+    left: 375px;
+    height: 300px;
+    width: 1px;
+    background: black;
+}
+
+.lines {
+    display: none;
+}
+
+.square {
+    height: 150px;
+    width: 125px;
+    border: 0.5px solid black;
+}
+
+.square:hover {
+    background-color: blanchedalmond;
+}
+
+#square2 {
+    position: relative;
+    top: -152px;
+    left: 125px;
+}
+
+#square3 {
+    position: relative; 
+    top: -303px;
+    left: 250px;
+}
+
+#square4 {
+    position: relative; 
+    top: -454px;
+    left: 375px;
+}
+#square5 {
+    position: relative; 
+    top: -453px;
+}
+
+#square6 {
+    position: relative; 
+    top: -604px;
+    left: 125px;
+}
+
+#square7 {
+    position: relative; 
+    top: -756px;
+    left: 250px;
+}
+
+#square8 {
+    position: relative; 
+    top: -907px;
+    left: 375px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-box {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    margin: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.back-space {
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.forward-space {
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#footer-button {
+    background-color: azure;
+    height: 100px;
+    width: 200px;
+}
+
+.top-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 499px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'VT323', monospace;
+    border: 1px solid black;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    align-items: center;
+}
+
+.button {
+    color: black;
+    height: 20px;
+    width: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+}
+
+#diary {
+    height: 40px;
+    width: 40px;
+}
+
+.bottom-bar {
+    position: relative;
+    top: 450px;
+    height: 30px;
+    width: 500px;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    /* border-top: 1px solid black; */
+    border-top: 5px solid white;
+    outline: 1px solid black;
+}
