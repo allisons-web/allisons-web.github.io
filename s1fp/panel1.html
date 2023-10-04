@@ -4,9 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="time.js"></script> 
 </head>
 
-<body>
+<body onload="printTime(); setInterval(printTime, 1000);">
+    
     <div class="main">
         <div class="story-wrapper">
             <div class="top-bar">
@@ -23,29 +25,26 @@
                 </div>
             </div>
             <div class="diary-window">
-                <p style="font-weight: lighter;">light</p>
-                <p style="font-weight: normal;">normal</p>
-                <p style="font-weight: bold;">bold</p>
-                <p style="font-weight:bolder;">bolder</p>
-                <p style="font-style: italic;">italic</p>
-                <p style="font-style: oblique;">oblique</p>
-            </div>
-            
-            <div class="screen">
-
+                <p id="content">text goes here whole entry black black sheep heyllo dsfsfjklsdjflskdjf<span id="cursor">|</span></p>
             </div>
             <div class="bottom-bar">
-                <div class="dash-buttons" id="windows">
-                    <img id="start-icon" src="s1fp-assets/start-icon.png">
-                    Start
+                <div id="left-align">
+                    <div class="dash-buttons" id="windows">
+                        <img id="start-icon" src="s1fp-assets/start-icon.png">
+                        Start
+                    </div>
+                    <div class="dash-buttons" id="text-editor">
+                        <img id="notepad-icon" src="s1fp-assets/notepad-icon.png">
+                        Notepad
+                    </div>
+                    <div class="dash-buttons-selected" id="text-editor">
+                        <img id="diary-icon" src="s1fp-assets/diary-icon.png">
+                        Diary
+                    </div>
                 </div>
-                <div class="dash-buttons" id="text-editor">
-                    <img id="notepad-icon" src="s1fp-assets/notepad-icon.png">
-                    Notepad
-                </div>
-                <div class="dash-buttons-selected" id="text-editor">
-                    <img id="diary-icon" src="s1fp-assets/diary-icon.png">
-                    Diary
+                
+                <div class="dash-buttons-clock" id="time">
+                    <div id="time"></div>
                 </div>
             </div>
         </div>

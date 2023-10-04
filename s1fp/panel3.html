@@ -1,12 +1,56 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="panel-style.css">
     <title>cycling...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="time.js"></script> 
 </head>
 
-<body>
+<body onload="printTime();">
     <div class="main">
-        <div class="story-box">
-            3
+        <div class="story-wrapper">
+            <div class="top-bar">
+                <div class="label">
+                    <div id="favicon">
+                        <img id="diary" src="s1fp-assets/diary-icon.png">
+                    </div>
+                    <div id="title">diary-entry.txt</div>
+                </div>
+                <div class="buttons">
+                    <div class="button" id="minimize">_</div>
+                    <div class="button" id="fullscreen">[]</div>
+                    <div class="button" id="x">x</div>
+                </div>
+            </div>
+            <div class="diary-window">
+                <p style="font-weight: lighter;">page 3</p>
+                <p style="font-weight: normal;">normal</p>
+                <p style="font-weight: bold;">bold</p>
+                <p style="font-weight:bolder;">bolder</p>
+                <p style="font-style: italic;">italic</p>
+                <p style="font-style: oblique;">oblique</p>
+            </div>
+            <div class="bottom-bar">
+                <div id="left-align">
+                    <div class="dash-buttons" id="windows">
+                        <img id="start-icon" src="s1fp-assets/start-icon.png">
+                        Start
+                    </div>
+                    <div class="dash-buttons" id="text-editor">
+                        <img id="notepad-icon" src="s1fp-assets/notepad-icon.png">
+                        Notepad
+                    </div>
+                    <div class="dash-buttons-selected" id="text-editor">
+                        <img id="diary-icon" src="s1fp-assets/diary-icon.png">
+                        Diary
+                    </div>
+                </div>
+                
+                <div class="dash-buttons-clock" id="time">
+                    <div id="time"></div>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <div class="back-space">

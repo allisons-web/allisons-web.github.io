@@ -1,3 +1,9 @@
+body {
+    background-image: url("s1fp-assets/grass.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'VT323', monospace;
+}
 
 .main {
     display: flex;
@@ -7,10 +13,16 @@
 
 .story-wrapper {
     position: relative;
-    height: 500px;
-    width: 500px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 80vw;
     margin: 30px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .footer {
@@ -39,20 +51,25 @@
 }
 
 .top-bar {
-    left: 0px;
+    position: relative;
     height: 30px;
-    width: 499px;
     background-color: blue;
     display: flex;
     justify-content: space-between;
     color: white;
     font-family: 'VT323', monospace;
     border: 1px solid black;
+    /* animation: fadeIn 1s; */
 }
 
 .diary-window {
-    height: 400px;
-    border: 29px solid pink;
+    position: relative;
+    height: 65vh;
+    background-color: rgba(256, 256, 256, 0.6);
+    padding: 20px;
+    /* animation: fadeIn 1s; */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .label {
@@ -62,8 +79,6 @@
 
 .buttons {
     display: flex;
-    justify-content: space-evenly;
-    width: 20%;
     align-items: center;
 }
 
@@ -75,6 +90,7 @@
     text-align: center;
     border-bottom: 3px solid gray;
     border-left: 3px solid gray;
+    margin-right: 3px;
 }
 
 #diary {
@@ -88,10 +104,9 @@
     position: relative;
     padding: 2px;
     height: 30px;
-    width: 496px;
     background-color: #bfb8bf;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     border-top: 3px solid #f7f0f7;
     outline: 1px solid #201e20;
     font-family: 'VT323', monospace;
@@ -141,4 +156,73 @@
     color: black;
 }
 
+.dash-buttons-clock {
+    background-color:  #bfb8bf;
+    padding: 1px;
+    border-bottom: 3px solid #f7f0f7;
+    border-right:  3px solid #f7f0f7;
+    border-left: 2px solid #201e20;
+    border-top: 2px solid #201e20;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #302e30;
+}
 
+.time-display {
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#left-align {
+    display: flex;
+    flex-direction: row;
+}
+
+#cat {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+#content {
+    background:
+        linear-gradient(-90deg, transparent 5px, #0000 0) 10px 0,
+        linear-gradient(transparent 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 200%;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    animation: b 0.7s infinite steps(1),
+        t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+
+#cursor {
+    color: black;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+
+@keyframes typing {
+    0% { width: 0 }
+    80% { width: 90% }
+    90% { width: 50% }
+    100% { width: 100% } 
+}
+
+@keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
