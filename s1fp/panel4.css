@@ -1,0 +1,87 @@
+.menu-item {
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    background-color: white;
+}
+
+.diary-window {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+h2 {
+    font-size: 2.75vh;
+}
+
+h3 {
+    font-size: 2vh;
+    font-style: italic;
+    font-weight: normal;
+}
+
+p {
+    font-size: 2.5vh;
+}
+
+.diary-window-marquee {
+    position: relative;
+    height: 65vh;
+    background-color: rgba(256, 256, 256, 0.6);
+    padding: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: hidden;
+}
+
+.marqueeStyle {
+    font-size: 50px;
+    display:inline-block;
+    -webkit-animation: scrolling-left1 20s linear infinite;
+    animation: scrolling-left1 20s linear infinite;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.marqueeStyle2 {
+    display:inline-block;
+    -webkit-animation: scrolling-left2 20s linear infinite;
+    animation: scrolling-left2 20s linear infinite;
+    animation-delay: 10s;
+}
+
+#marq1 {
+    animation-duration: 7s;
+}
+
+#marq2 {
+    animation-duration: 10s;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
+
+#marq3 {
+    animation-duration: 20s;
+    font-family: 'Orbit', sans-serif;
+}
+
+#marq4 {
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
+
+#marq5 {
+    font-size: 20px;
+}
+
+@keyframes scrolling-left1 {
+    0% {transform: translateX(100%);
+        -webkit-transform: translateX(100%);}
+    100% {transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);}
+}
+
+

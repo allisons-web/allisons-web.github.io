@@ -1,9 +1,12 @@
 <head>
     <link rel="stylesheet" type="text/css" href="panel-style.css">
+    <link rel="stylesheet" type="text/css" href="panel4.css">
     <title>cycling...</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Orbit&family=Reenie+Beanie&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <script src="time.js"></script> 
 </head>
 
@@ -20,16 +23,32 @@
                 <div class="buttons">
                     <div class="button" id="minimize">_</div>
                     <div class="button" id="fullscreen">[]</div>
-                    <div class="button" id="x">x</div>
+                    <a href="index.html">
+                        <div class="button" id="x">x</div>
+                    </a>
                 </div>
             </div>
-            <div class="diary-window">
-                <p style="font-weight: lighter;">page 5</p>
-                <p style="font-weight: normal;">normal</p>
-                <p style="font-weight: bold;">bold</p>
-                <p style="font-weight:bolder;">bolder</p>
-                <p style="font-style: italic;">italic</p>
-                <p style="font-style: oblique;">oblique</p>
+            <div class="diary-window-marquee">
+                <div>
+                    <span class="marqueeStyle" id="marq1">&nbsp;c'est la même, tous les jours</span>
+                    <span class="marqueeStyle2">&nbsp;c'est la même, tous les jours</span>
+                </div>
+                <div>
+                    <span class="marqueeStyle" id="marq2">&nbsp;明天都一样 </span>
+                    <span class="marqueeStyle2">&nbsp;明天都一样 </span>
+                </div>
+                <div>
+                    <span class="marqueeStyle" id="marq3">&nbsp;매일 매일 똑같다 </span>
+                    <span class="marqueeStyle2">&nbsp;매일 매일 똑같다 </span>
+                </div>
+                <div>
+                    <span class="marqueeStyle" id="marq4">&nbsp;什么都不变 </span>
+                    <span class="marqueeStyle2">&nbsp;什么都不变 </span>
+                </div>
+                <div style="white-space: nowrap">
+                    <span class="marqueeStyle" id="marq6">&nbsp;plus ça change, plus c'est la même chose </span>
+                    <span class="marqueeStyle2" id="marq5">&nbsp;plus ça change, plus c'est la même chose </span>
+                </div>
             </div>
             <div class="bottom-bar">
                 <div id="left-align">
@@ -55,12 +74,12 @@
         <div class="footer">
             <div class="back-space">
                 <a href="panel4.html">
-                    <div id="footer-button"></div>
+                    <div id="footer-button">go backward</div>
                 </a>
             </div>
             <div class="forward-space">
-                <a href="panel6.html">
-                    <div id="footer-button"></div>
+                <a href="panel1.html">
+                    <div id="footer-button">go forward</div>
                 </a>
             </div>
         </div>

@@ -13,23 +13,30 @@
             <div class="top-bar">
                 <div class="label">
                     <div id="favicon">
-                        <img id="diary" src="s1fp-assets/diary-icon.png">
+                            <img id="diary" src="s1fp-assets/diary-icon.png">
                     </div>
                     <div id="title">diary-entry.txt</div>
                 </div>
                 <div class="buttons">
                     <div class="button" id="minimize">_</div>
                     <div class="button" id="fullscreen">[]</div>
-                    <div class="button" id="x">x</div>
+                    <a href="index.html">
+                        <div class="button" id="x">x</div>
+                    </a>
                 </div>
             </div>
-            <div class="diary-window">
-                <p style="font-weight: lighter;">page 2</p>
-                <p style="font-weight: normal;">normal</p>
-                <p style="font-weight: bold;">bold</p>
-                <p style="font-weight:bolder;">bolder</p>
-                <p style="font-style: italic;">italic</p>
-                <p style="font-style: oblique;">oblique</p>
+            <div class="diary-window" id="window-pic">
+                <div id="cookie-wrapper">
+                    <img id="cookie" src="s1fp-assets/fortune_cookie.png">
+                
+                    <div id="fortune">
+                        Traveling this year will bring your life into greater perspective.
+                        <div class="blue-box" id="top-left-box"></div>
+                        <div class="blue-box" id="top-right-box"></div>
+                        <div class="blue-box" id="bot-left-box"></div>
+                        <div class="blue-box" id="bot-right-box"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="bottom-bar">
@@ -56,12 +63,12 @@
         <div class="footer">
             <div class="back-space">
                 <a href="panel1.html">
-                    <div id="footer-button"></div>
+                    <div id="footer-button">go backward</div>
                 </a>
             </div>
             <div class="forward-space">
                 <a href="panel3.html">
-                    <div id="footer-button"></div>
+                    <div id="footer-button">go forward</div>
                 </a>
             </div>
         </div>

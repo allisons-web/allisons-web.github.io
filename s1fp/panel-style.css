@@ -15,7 +15,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
     width: 80vw;
     margin: 30px;
 }
@@ -33,21 +33,29 @@ body {
 .back-space {
     height: 100px;
     width: 200px;
-    border: 1px solid black;
     margin: 20px;
 }
 
 .forward-space {
     height: 100px;
     width: 200px;
-    border: 1px solid black;
     margin: 20px;
 }
 
 #footer-button {
-    background-color: azure;
+    background-color: transparent;
     height: 100px;
     width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+}
+
+#footer-button:hover {
+    background-color: rgba(2, 2, 2, 0.4);
+    color: white;
+    animation: fadeIn 6s;
 }
 
 .top-bar {
@@ -72,6 +80,117 @@ body {
     border-right: 1px solid black;
 }
 
+#window-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fortune {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    font-size: 2vh;
+}
+
+#cookie-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cookie {
+    height: 30vh;
+    width: 30vh;
+}
+
+#cookie-wrapper:hover #fortune {
+    display: block;
+}
+
+.blue-box {
+    position: absolute;
+    background-color: blue;
+}
+
+#top-left-box {
+    width: 50px;
+    height: 10px;
+    top: 0px;
+    left: 0px
+}
+
+#top-right-box {
+    width: 40px;
+    height: 10px;
+    top: 0px;
+    right: 0px
+}
+
+#bot-left-box {
+    width: 50px;
+    height: 15px;
+    bottom: 0px;
+    left: 0px
+}
+
+#bot-right-box {
+    width: 40px;
+    height: 15px;
+    bottom: 0px;
+    right: 0px
+}
+
+.ghost {
+    position: absolute;
+    height: 5vh;
+    opacity: 0;
+}
+
+#ghost1 {
+    animation: moveghost 3s infinite;
+}
+
+#ghost2 {
+    animation: moveghost 3s infinite;
+    animation-delay: 1s;
+}
+
+#ghost3 {
+    animation: moveghost 3s infinite;
+    animation-delay: 0.34s;
+}
+
+#ghost4 {
+    animation: moveghost 3s infinite;
+}
+
+#ghost5 {
+    animation: moveghost 3s infinite;
+    animation-delay: 1.67s;
+}
+
+#ghost6 {
+    animation: moveghost 3s infinite;
+    animation-delay: 2.3s;
+}
+
+@keyframes moveghost {
+    0% {
+        transform: translate(80vw, 0); opacity: .50;
+    }
+
+    50% {
+        transform: translate(0, 80); opacity: 1;
+    }
+
+    100% {
+        transform: translate(1, 0); opacity: .50;
+    }
+}
+
 .label {
     display: flex;
     align-items: center;
@@ -80,6 +199,8 @@ body {
 .buttons {
     display: flex;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .button {
