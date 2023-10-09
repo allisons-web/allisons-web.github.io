@@ -68,3 +68,14 @@ body {
     height: 20vh;
     top: 35vh;
 }
+
+#webring {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px;
+}
+
+#webring-link {
+    color: white;
+}
