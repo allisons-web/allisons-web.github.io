@@ -1,0 +1,68 @@
+/* 
+KOREAN : font-family: 'Black Han Sans', sans-serif;
+CHINESE : font-family: 'Noto Sans SC', sans-serif;
+ENGLISH : font-family: 'Rubik Mono One', monospace; 
+*/
+
+body {
+    font-family: 'Rubik Mono One', monospace;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.marquee-wrapper {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#marquee1 {
+    width: 100000vw;
+    position: relative;
+    left: -434.5vw;
+    top: 0;
+    font-size: 10vw;
+    animation: marquee-forward infinite 15s linear;
+}
+
+#marquee2 {
+    font-family: 'Black Han Sans', sans-serif;
+    width: 100000vw;
+    position: relative;
+    left: -434.5vw;
+    top: 0;
+    font-size: 20vw;
+    animation: marquee-backward infinite 15s linear;
+}
+
+#marquee3 {
+    font-family: 'Black Han Sans', sans-serif;
+    width: 100000vw;
+    position: relative;
+    left: -434.5vw;
+    top: 0;
+    font-size: 10vw;
+    animation: marquee-forward infinite 15s linear;
+}
+
+#marquee1:hover, #marquee2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-forward {
+    0% { left: 0; }
+    100% { left: -434.5vw }
+}
+
+@keyframes marquee-backward {
+    0% { left: -434.5vw }
+    100% { left: 0 }
+}
+
+#forest {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: 0;
+}
+

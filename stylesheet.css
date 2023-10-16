@@ -1,0 +1,15 @@
+body {
+    background-color: #f5eddc;
+    padding: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2px;
+}
+a:hover {
+    background-color: black;
+    color: white;
+}
