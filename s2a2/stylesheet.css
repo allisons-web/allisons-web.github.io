@@ -6,12 +6,13 @@ ENGLISH : font-family: 'Rubik Mono One', monospace;
 
 body {
     font-family: 'Rubik Mono One', monospace;
-    margin: 20px;
+    /* margin: 20px; */
     font-size: 20px;
+    background-color: #04c35b;
 }
 
 .marquee-wrapper {
-    width: 100vw;
+    width: 98vw;
     overflow: hidden;
     position: relative;
 }
@@ -21,8 +22,9 @@ body {
     position: relative;
     left: -434.5vw;
     top: 0;
-    font-size: 10vw;
-    animation: marquee-forward infinite 15s linear;
+    font-size: 5vw;
+    color: white;
+    animation: marquee-forward infinite 25s linear;
 }
 
 #marquee2 {
@@ -30,9 +32,8 @@ body {
     width: 100000vw;
     position: relative;
     left: -434.5vw;
-    top: 0;
-    font-size: 20vw;
-    animation: marquee-backward infinite 15s linear;
+    font-size: 10vw;
+    animation: marquee-forward infinite 25s linear;
 }
 
 #marquee3 {
@@ -41,11 +42,21 @@ body {
     position: relative;
     left: -434.5vw;
     top: 0;
-    font-size: 10vw;
-    animation: marquee-forward infinite 15s linear;
+    font-size: 5vw;
+    animation: marquee-backward infinite 25s linear;
 }
 
-#marquee1:hover, #marquee2:hover {
+#wrapper2 {
+    position: absolute;
+    bottom: 0;
+}
+
+#wrapper3 {
+    position: absolute;
+    top: 50%;
+}
+
+#marquee1:hover, #marquee2:hover, #marquee3:hover {
     animation-play-state: paused;
 }
 
@@ -61,8 +72,29 @@ body {
 
 #forest {
     position: absolute;
-    width: 50%;
-    left: 25%;
-    bottom: 0;
+    height: 80%;
+    left: 40%;
+    top: 15%;
+    opacity: .9;
 }
+
+#forin {
+    display: none;
+    position: absolute;
+    height: 40%;
+    top: 50%;
+}
+
+#addams {
+    display: none;
+    position: absolute;
+    height: 50%;
+    right: 0;
+    top: 20%;
+}
+
+a:active, #forin {
+    display: flex;
+}
+
 
