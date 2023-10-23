@@ -6,9 +6,10 @@ ENGLISH : font-family: 'Rubik Mono One', monospace;
 
 body {
     font-family: 'Rubik Mono One', monospace;
-    /* margin: 20px; */
     font-size: 20px;
     background-color: #04c35b;
+    overflow: hidden;
+    margin: 0;
 }
 
 .marquee-wrapper {
@@ -20,30 +21,29 @@ body {
 #marquee1 {
     width: 100000vw;
     position: relative;
-    left: -434.5vw;
     top: 0;
     font-size: 5vw;
-    color: white;
-    animation: marquee-forward infinite 25s linear;
+    
+    animation: marquee-one infinite 20s linear;
 }
 
 #marquee2 {
     font-family: 'Black Han Sans', sans-serif;
+    color: white;
     width: 100000vw;
     position: relative;
-    left: -434.5vw;
-    font-size: 10vw;
-    animation: marquee-forward infinite 25s linear;
+    top: 0;
+    font-size: 12vw;
+    animation: marquee-two infinite 20s linear;
 }
 
 #marquee3 {
     font-family: 'Black Han Sans', sans-serif;
     width: 100000vw;
     position: relative;
-    left: -434.5vw;
-    top: 0;
-    font-size: 5vw;
-    animation: marquee-backward infinite 25s linear;
+    left: 0;
+    font-size: 10vw;
+    animation: marquee-three infinite 25s linear;
 }
 
 #wrapper2 {
@@ -60,41 +60,70 @@ body {
     animation-play-state: paused;
 }
 
-@keyframes marquee-forward {
+@keyframes marquee-three {
     0% { left: 0; }
-    100% { left: -434.5vw }
+    100% { left: -326vw;}
 }
 
-@keyframes marquee-backward {
-    0% { left: -434.5vw }
+@keyframes marquee-two {
+    0% { left: -444vw; }
     100% { left: 0 }
+}
+
+@keyframes marquee-one {
+    0% { left: 0; }
+    100% { left: -2199; }
 }
 
 #forest {
     position: absolute;
-    height: 80%;
-    left: 40%;
+    height: 50%;
+    width: auto;
+    left: 30%;
     top: 15%;
-    opacity: .9;
+}
+
+#forest:hover {
+    opacity: 0.8;
 }
 
 #forin {
     display: none;
     position: absolute;
-    height: 40%;
-    top: 50%;
+    height: 60vh;
+    width: auto;
+    top: 35%;
 }
 
 #addams {
     display: none;
     position: absolute;
-    height: 50%;
+    width: 65%;
     right: 0;
-    top: 20%;
+    bottom: 0;
 }
 
-a:active, #forin {
-    display: flex;
+#forin:target {
+    display: block;
 }
 
+#addams:target {
+    display: block;
+}   
 
+.kr {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.en {
+    font-family: 'Rubik Mono One', monospace; 
+}
+
+.cn {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    color: pink;
+}
