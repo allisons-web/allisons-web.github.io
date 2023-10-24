@@ -1,9 +1,3 @@
-/* 
-KOREAN : font-family: 'Black Han Sans', sans-serif;
-CHINESE : font-family: 'Noto Sans SC', sans-serif;
-ENGLISH : font-family: 'Rubik Mono One', monospace; 
-*/
-
 body {
     font-family: 'Rubik Mono One', monospace;
     font-size: 20px;
@@ -13,7 +7,6 @@ body {
 }
 
 .marquee-wrapper {
-    width: 98vw;
     overflow: hidden;
     position: relative;
 }
@@ -23,7 +16,6 @@ body {
     position: relative;
     top: 0;
     font-size: 5vw;
-    
     animation: marquee-one infinite 20s linear;
 }
 
@@ -32,7 +24,6 @@ body {
     color: white;
     width: 100000vw;
     position: relative;
-    top: 0;
     font-size: 12vw;
     animation: marquee-two infinite 20s linear;
 }
@@ -41,8 +32,7 @@ body {
     font-family: 'Black Han Sans', sans-serif;
     width: 100000vw;
     position: relative;
-    left: 0;
-    font-size: 10vw;
+    font-size: 10vh;
     animation: marquee-three infinite 25s linear;
 }
 
@@ -53,7 +43,7 @@ body {
 
 #wrapper3 {
     position: absolute;
-    top: 50%;
+    top: 30%;
 }
 
 #marquee1:hover, #marquee2:hover, #marquee3:hover {
@@ -77,39 +67,73 @@ body {
 
 #forest {
     position: absolute;
-    height: 50%;
+    height: 70vh;
     width: auto;
-    left: 30%;
+    left: 40%;
     top: 15%;
-}
-
-#forest:hover {
     opacity: 0.8;
 }
 
+#forest:hover {
+    z-index: 0;
+}
+
 #forin {
-    display: none;
     position: absolute;
     height: 60vh;
     width: auto;
-    top: 35%;
+    bottom: 0%;
+    left: 5%;
 }
 
 #addams {
-    display: none;
     position: absolute;
-    width: 65%;
+    height: 50vh;
     right: 0;
-    bottom: 0;
+    bottom: 0%;
 }
 
-#forin:target {
+#oyster {
+    position: absolute;
+    height: 70vh;
+    right: 5%;
+    top: -15%;
+}
+
+img:hover {
+    z-index: 2;
+    opacity: 1.0;
+}
+
+#happy-hour {
+    display: none;
+}
+
+#happy-hour:target {
     display: block;
 }
 
-#addams:target {
+#sunset:target {
     display: block;
 }   
+
+#sunset {
+    display: none;
+}
+
+#window {
+    position: absolute;
+    height: 60vh;
+    top: 20%;
+    left: 27%;
+}
+
+#sansom {
+    position: absolute;
+    height: 70vh;
+    left: 0%;
+    top: 0;
+}
 
 .kr {
     font-family: 'Black Han Sans', sans-serif;
@@ -125,5 +149,5 @@ body {
 }
 
 a {
-    color: pink;
+    color: black;
 }
