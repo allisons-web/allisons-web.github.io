@@ -52,17 +52,17 @@ body {
 
 @keyframes marquee-three {
     0% { left: 0; }
-    100% { left: -326vw;}
+    100% { left: -259.5vw;}
 }
 
 @keyframes marquee-two {
-    0% { left: -444vw; }
+    0% { left: -412vw; }
     100% { left: 0 }
 }
 
 @keyframes marquee-one {
     0% { left: 0; }
-    100% { left: -2199; }
+    100% { left: -212vw; }
 }
 
 #forest {
@@ -149,5 +149,13 @@ img:hover {
 }
 
 a {
-    color: black;
+    color: white;
+}
+
+::selection {
+    background: rgba(250, 118, 2, 0.9);
+}
+
+::-moz-selection {
+    background: rgba(250, 118, 2, 0.9);
 }

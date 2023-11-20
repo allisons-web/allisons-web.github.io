@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('s3a1-assets/background.png');
+    background-position: bottom middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nes-container {
+    background-color: white;
+}
+
+.scene {
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scene0 {
+    display: none;
+}
+
+#scene1 {
+    display: none;
+}
+
+#scene2 {
+    display: none;
+}
+
+#scene3 {
+    display: none;
+}
+
+#scene4 {
+    display: none;
+}
+
+#scene5 {
+    display: none;
+}
+
+#prompter {
+    position: absolute;
+    bottom: 10%;
+    max-width: 70%;
+    align-items: center;
+}
+
+#continue {
+    position: absolute;
+    bottom: 5;
+    right: 5;
+}
+
+#scene0:target {
+    display: block;
+}
+
+#scene1:target {
+    display: block;
+}
+
+#scene2:target {
+    display: block;
+}
+
+#scene3:target {
+    display: block;
+}
+
+#scene4:target {
+    display: block;
+}
+
+#scene5:target {
+    display: block;
+}
+
+.scene:not(:target) {
+    display: none;
+}
+
+img {
+    position: relative;
+    top: 50%;
+    height: 20vh;
+}
+
+.imgs {
+    position: absolute;
+    top: 50%;
+    display: none;
+}
+
+#restart {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    padding: 5px;
+}

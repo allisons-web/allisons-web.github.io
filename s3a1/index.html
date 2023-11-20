@@ -1,0 +1,116 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <!-- <div id="restart">
+        <a id="startover" href="#scene0">start over</a></div>
+    </div> -->
+    <div id="img1" class="imgs">
+        <img id="cup1" src="s3a1-assets/hotcup.png">
+        <img id="cup2" src="s3a1-assets/glass.png">
+    </div>
+    <div id="img1.5" class="imgs">
+        <img id="cup2" src="s3a1-assets/glass.png">
+    </div>
+    <div id="img2" class="imgs">
+        <img id="coffee" src="s3a1-assets/coffee.png">
+        <img id="matcha" src="s3a1-assets/matcha.png">
+    </div>
+    <div id="img3" class="imgs">
+        <img id="milk" src="s3a1-assets/milk.png">
+        <img id="oat" src="s3a1-assets/oat milk.png">
+    </div>
+    <div id="img4" class="imgs">
+        <img id="simple" src="s3a1-assets/syrup.png">
+        <img id="vanilla" src="s3a1-assets/vanilla.png">
+        <img id="sugar" src="s3a1-assets/sugar.png">
+    </div>
+    <div id="img4" class="imgs">
+        <img id="simple" src="s3a1-assets/syrup.png">
+        <img id="vanilla" src="s3a1-assets/vanilla.png">
+        <img id="sugar" src="s3a1-assets/sugar.png">
+    </div>
+    <div id="img5" class="imgs">
+    </div>
+    
+    <div class="nes-container is-rounded" id="prompter">
+        <div id="scene0" class="scene">
+            
+                <p>Hello there. Make me a drink will you?</p>
+                <a id="continue" onClick="show('img1'); return true" href="#scene1" style="text-decoration: none;">continue ></a>
+            
+        </div>
+        <div id="scene1" class="scene">
+                <p>Will it be hot or cold?</p>
+                <label>
+                    <input type="radio" class="nes-radio" name="temp" value="Hot" checked />
+                    <span>Hot</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="temp" value="Cold"/>
+                    <span>Cold</span>
+                </label>
+                <a id="continue" onClick="hide('img1'); show('img1.5'); return true" href="#scene1.5" style="text-decoration: none;">continue ></a>
+        </div>
+        <div id="scene1.5" class="scene">
+                <p>I'm going to assume you chose cold. Hot drinks take too long.</p>
+                <a id="continue" onClick="getTemp(); hide('img1.5'); show('img2'); return true" href="#scene2" style="text-decoration: none;">continue ></a>
+        </div>
+        <div id="scene2" class="scene">
+                <p>Coffee or matcha?</p>
+                <label>
+                    <input type="radio" class="nes-radio" name="type" value="Coffee" checked />
+                    <span>Coffee</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="type" value="Matcha"/>
+                    <span>Matcha</span>
+                </label>
+                <p><a id="continue" onclick="hide('img2'); show('img3'); getType(); return true" href="#scene3" style="text-decoration: none;">continue ></a></p>
+        </div>
+        <div id="scene3" class="scene">
+                <p>Adding milk?</p>
+                <label>
+                    <input type="radio" class="nes-radio" name="milk" value="Whole milk" checked />
+                    <span>Whole milk</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="milk" value="Oat milk"/>
+                    <span>Oat milk</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="milk" value="No milk"/>
+                    <span>No milk</span>
+                </label>
+                <p><a id="continue" onclick="hide('img3'); show('img4'); getMilk(); return true" href="#scene4" style="text-decoration: none;">continue ></a></p>
+        </div>
+        <div id="scene4" class="scene">
+                <p>Adding sweetener?</p>
+                <label>
+                    <input type="radio" class="nes-radio" name="sweetener" value="Simple syrup" checked />
+                    <span>Simple syrup</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="sweetener" value="Vanilla syrup"/>
+                    <span>Vanilla syrup</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="sweetener" value="Sugar"/>
+                    <span>Sugar</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="sweetener" value="No sweetener"/>
+                    <span>No sweetener</span>
+                </label>
+                <p><a id="continue" onclick="hide('img4'); getSweetener(); return true" href="#scene5" style="text-decoration: none;">continue ></a></p>
+        </div>
+        <div id="scene5">
+            <p>Let me get a sip...</p>
+            <p><a id="continue" onclick="hide('img4'); showdrink(); show('img5'); getDialog(); return true" href="#scene5" style="text-decoration: none;">What do you think? ></a></p>
+        </div>
+    </div>
+</body>
