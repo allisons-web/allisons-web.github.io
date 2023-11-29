@@ -86,12 +86,15 @@ function getDialog() {
         dialog = "Hmmm... pretty good... I guess. What's wrong? Oh nothing's wrong. Come back tomorrow and try again."
     }
     document.getElementById('prompter').innerText = dialog;
-
-    const anchor = document.createElement('a');
-    anchor.href = '#scene0';
-    anchor.innerText = 'Try again >';
-    // anchor.onclick(refresh)
-    document.getElementById('prompter').appendChild(anchor);
+    
+    const button = document.createElement('button');
+    button.onclick(window.reload());
+    button.innerText = 'Try again';
+    document.getElementById('prompter').append(button);
+    // const anchor = document.createElement('a');
+    // anchor.href = '#scene0';
+    // anchor.innerText = 'Try again >';
+    // document.getElementById('prompter').appendChild(anchor);
 }
 
 function show(id) {
