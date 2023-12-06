@@ -68,9 +68,11 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth*0.8, windowHeight*0.7);
+  let theCanvas = createCanvas(windowWidth*0.6, windowHeight*0.7);
+  theCanvas.parent('#content');
 
-  textTyped += "~.Dear";
+
+  textTyped += "~.Hi";
 
   centerX = width / 2;
   centerY = height / 2;
@@ -88,11 +90,11 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth*0.6, windowHeight*0.7);
 }
 
 function draw() {
-  background(255);
+  background(220);
 
   if (mouseIsPressed && mouseButton == LEFT) {
     centerX = mouseX - offsetX;
@@ -154,6 +156,11 @@ function draw() {
         image(shapeReturn, 1, -37, 20, 40);
         translate(1, 10);
         rotate(PI);
+        document.getElementById('wordcount').innerText = (wordCount() + " words");
+        let timetext = document.getElementById('eta-time')
+        timetext.innerText = (eta());
+        document.getElementById('flex-container-route').style.display = "flex";
+        console.log(wordCount())
         break;
 
       case "~":
@@ -210,8 +217,24 @@ function keyTyped() {
   }
 }
 
-// function wordCount() {
-//   var count = 0;
-//   for i in range (0, len(textTyped)):
+function wordCount() {
+  var count = 1;
+  var i = 0;
+  for (i = 0; i < textTyped.length; i++){
+    if (textTyped[i] == ' ') {
+      count += 1;
+    }
+  }
+  return count;
+}
 
-// }
+function eta() {
+  var count = wordCount();
+  var eta = count / 100;
+  var text = " min"
+  if (eta < 1) {
+    eta = 1;
+    return eta + text;
+  }
+  return eta + text + "s";
+}
