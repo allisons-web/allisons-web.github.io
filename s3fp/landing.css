@@ -6,9 +6,19 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-bottom: 20%;
     font-size: 2vw;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+       font-size: 20px;
+    }
+
+    #nav-container {
+        font-size: 0.5vw;
+    }
 }
 
 #heading::before {
@@ -39,13 +49,13 @@ h4 {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 }
 
 #nav-container {
-    width: 20vw;
+    width: 25vw;
     height: 70vh;
-    background-color: pink;
+    /* background-color: pink; */
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.5vw;
@@ -64,7 +74,8 @@ canvas {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid black;
+    justify-content:flex-start;
+    padding: 0.5vw;
 }
 
 #top {
@@ -75,36 +86,38 @@ canvas {
 #fills {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    width: 16vw;
+    margin: 0px;
 }
 
 #nav-bar-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border: 1px solid black;
+    justify-content:space-between;
+    align-items: center;
 }
 
 #eta {
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
 #flex-container-route {
     display: flex;
     flex-direction: row;
     align-items: start;
-    border: 1px solid black;
+    border: 1px solid gray;
     justify-content: space-between;
     border-left: 5px solid blue;
-    /* display: none; */
+    display: none;
     padding: 1vw;
     vertical-align: text-top;
+    width: 95%;
 }
 
 #eta-time, #wordcount {
     align-self: flex-end;
+    margin: 3px;
 }
 
 .location-box {
@@ -121,4 +134,55 @@ canvas {
 .icon {
     width: 20px;
     height: 20px;
+    position: absolute;
+}
+
+#mapsPath {
+    height: 6vw;
+    padding: 0px;
+}
+
+#letter {
+    position: relative;
+    padding-top: 1vw;
+    width: 3vw;
+    height: 3vw;
+    padding-right: 1vw;
+}
+
+#wordcount {
+    color: gray;
+    font-size: 1.2vw;
+}
+
+#letter-text-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#swap {
+    width: 2vw;
+    height: 2vw;
+    padding-right: 1.2vw;
+    margin: 0px;
+}
+
+#read-img {
+    width: 3.5vw;
+    height: 3.5vw;
+    padding-left: 3vw;
+}
+
+#walk-img {
+    height: 2vw;
+    width: 1.3vw;
+}
+
+#read-img, #walk-img {
+    padding-right: 3vw;
+}
+
+#top {
+    border: 1px solid gray;
+    padding: 1vw;
 }

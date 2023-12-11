@@ -68,7 +68,7 @@ function preload() {
 }
 
 function setup() {
-  let theCanvas = createCanvas(windowWidth*0.6, windowHeight*0.7);
+  let theCanvas = createCanvas(windowWidth*0.6, windowHeight*0.6);
   theCanvas.parent('#content');
 
 
@@ -90,11 +90,11 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth*0.6, windowHeight*0.7);
+  resizeCanvas(windowWidth*0.6, windowHeight*0.6);
 }
 
 function draw() {
-  background(220);
+  background(245);
 
   if (mouseIsPressed && mouseButton == LEFT) {
     centerX = mouseX - offsetX;
