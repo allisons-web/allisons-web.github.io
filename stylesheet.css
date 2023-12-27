@@ -68,11 +68,11 @@ body::-webkit-scrollbar {
 
     font-family: sans-serif;
     font-weight: bold;
-    font-size: calc(1.5vh + 1.5vw);
+    font-size: calc(3vh);
     color: rgba(244,244,100,1);
     text-shadow: 0 0 .2em rgba(0,0,0,.9);
 
-    background-image: linear-gradient();
+    background-image: linear-gradient(rgba(255,0,0,0), #862e4a, #862e4a, rgba(255,0,0,0));
 }
 
 #table {
