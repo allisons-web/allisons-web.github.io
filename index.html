@@ -1,30 +1,38 @@
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="portfolio.js"></script>
   </head>
 <body onload="capRotate()">
+  <h1 id="title">index</h1>
+  <div id="tabs">
+    <a class="tab" onclick="clickProjects()">projects</a>
+    <a class="tab" onclick="clickReadings()">readings</a>
+  </div>
   <div id="shady">
     <section id="tables">
       <table>
         <tr>
           <td class="heading">
-              web 1.0 - web 2.0
+              web 0.0 - web 1.0
           </td>
         </tr>
         <tr>
           <td>
-              <a href="https://codepen.io/Allison-Zhang/pen/abPBMYV">1) luck of the draw</a>
-          </td>
-        </tr>
-        <tr></tr>
-          <td>
-            <a href="https://codepen.io/Allison-Zhang/pen/QWzvNwp">2) found items</a>
+              <a class="entry" href="https://codepen.io/Allison-Zhang/pen/abPBMYV">&nbsp &nbsp &nbsp &nbsp luck of the draw</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="s1fp/index.html">3) introspecting...</a>
+            <a class="entry" href="https://codepen.io/Allison-Zhang/pen/QWzvNwp">&nbsp &nbsp &nbsp &nbsp found items</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="entry" href="s1fp/index.html">&nbsp &nbsp &nbsp &nbsp introspecting...</a>
           </td>
         </tr>
         </tr>
@@ -35,17 +43,17 @@
         </tr>
         <tr>
           <td>
-              <a href="s1fp/index.html">4) web ring (peek bottom left)</a>
+              <a class="entry" href="s1fp/index.html">&nbsp &nbsp &nbsp &nbsp web ring (peek bottom left)</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="s2a2/index.html">5) brutalist</a>
+            <a class="entry" href="s2a2/index.html">&nbsp &nbsp &nbsp &nbsp brutalist</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="https://editor.p5js.org/zhangall/full/gc2QH-E3X">6) koi clock</a>
+            <a class="entry" href="https://editor.p5js.org/zhangall/full/gc2QH-E3X">&nbsp &nbsp &nbsp &nbsp koi clock</a>
           </td>
         </tr>
         <tr>
@@ -55,17 +63,143 @@
         </tr>
         <tr>
           <td>
-              <a href="s3a1/index.html#scene0">7) make me a drink</a>
+              <a class="entry" href="s3a1/index.html#scene0">&nbsp &nbsp &nbsp &nbsp make me a drink</a>
           </td>
         </tr>
         <tr>
           <td>
-              <a href="https://terskayl.github.io/s3a2">8) productivity product</a>
+              <a class="entry" href="https://terskayl.github.io/s3a2">&nbsp &nbsp &nbsp &nbsp productivity product</a>
           </td>
         </tr>
         <tr>
           <td>
-              <a href="s3fp/landing.html">9) the distance between me &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp and you</a>
+              <a class="entry" href="s3fp/landing.html">&nbsp &nbsp &nbsp &nbsp the distance between me &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp and you</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+  <div id="readings">
+    <section id="tables">
+      <table>
+        <tr>
+          <td class="heading">
+              week 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(0)">&nbsp &nbsp Mail Art and the Big Monster from Second Thoughts</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 3
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(1)">&nbsp &nbsp Selections from Creative Independent and Arena How Do You Use the Internet Mindfully</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 4
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(2)">&nbsp &nbsp Selections from Publishing from Post-Digital-Print</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 5
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(3)">&nbsp &nbsp STILL THERE Ruins and Templates of Geocities from Lost and Living (in) Archives</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 6
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(4)">&nbsp &nbsp Dispersion</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 8
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(5)">&nbsp &nbsp Selections from Alt-Text as Poetry Workbook</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 9
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(6)">&nbsp &nbsp Selections from New Modernism(s)</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 10
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(7)">&nbsp &nbsp "A Personal Computer for Children of All Cultures" from Decolonising the Digital</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 12
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(8)">&nbsp &nbsp Beyond the New Media Frame The Poetics of Absence in Vera Frenkel’s String Games</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 13
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(9)">&nbsp &nbsp Performing the Feed</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 14
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(10)">&nbsp &nbsp Beyond Dark Matter from Logic Issue 15 Beacons</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="heading">
+              week 15
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <a class="entry" onclick="reading(11)">&nbsp &nbsp Why Games Or Can Art Workers Think</a>
           </td>
         </tr>
       </table>
@@ -74,5 +208,8 @@
   <div class="caption">
     <h1 id="caption-line">caption</h1>
   </div>
-  
+  <div id="reading-modal">
+    <span class="close" onclick="closeWindow()">&times;</span>
+    <p id="reading-text"></p>
+  </div>
 </body>
