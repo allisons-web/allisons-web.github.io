@@ -120,6 +120,7 @@ body::-webkit-scrollbar {
 #reading-text {
     height: 90%;
     overflow-y: scroll;
+    font-size: max(2vw, 2vh);
 }
 
 .close {
