@@ -3,7 +3,7 @@ body {
     margin-top: -5%;
     padding: 10%;
     padding-top: 0%;
-    padding-bottom: 15%;
+    padding-bottom: 18%;
     overflow: scroll;
     overflow-x: hidden;
     display: flex;
@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 #title {
     color: #ea160d;
     font-family: 'Shrikhand', serif;
-    font-size: 20vh;
+    font-size: min(30vw, 25vh);
     cursor: default;
 }
 
@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 
 .tab {
     margin: 5vw;
-    font-size: 10vh;
+    font-size: min(6vw, 10vh);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -50,6 +50,7 @@ body::-webkit-scrollbar {
     color: white;
     padding: 2px;
     font-family: 'Segoe UI', sans-serif;
+    font-size: calc(1vw + 1vh);
 }
 
 .entry:hover {
@@ -68,11 +69,14 @@ body::-webkit-scrollbar {
 
     font-family: sans-serif;
     font-weight: bold;
-    font-size: calc(3vh);
+    font-size: min(3vw, 3vh);
     color: rgba(244,244,100,1);
     text-shadow: 0 0 .2em rgba(0,0,0,.9);
+    text-align: center;
 
     background-image: linear-gradient(rgba(255,0,0,0), #862e4a, #862e4a, rgba(255,0,0,0));
+
+    word-wrap: normal;
 }
 
 #table {
@@ -90,6 +94,10 @@ body::-webkit-scrollbar {
     font-weight: bold;
     font-family:'Times New Roman', Times, serif;
     cursor: default;
+}
+
+#shady {
+    display: none;
 }
 
 #reading-modal {

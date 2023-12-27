@@ -2,7 +2,7 @@ let caps = [
     "Good day!",
     "Thanks for stopping by today.",
     "It's lovely to see you!",
-    "My portfolio is divided into readings and projects.",
+    "This is split into readings and projects.",
     "Projects have three sections,",
     "each represents a segment of the web.",
     "What are you waiting for?",
